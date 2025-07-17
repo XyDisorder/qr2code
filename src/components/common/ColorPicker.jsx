@@ -1,7 +1,9 @@
 import React from "react"
 
+const DEFAULT_COLOR = "#000000"
+
 export default function ColorPicker({ label, value, onChange }) {
-  const display = value ?? defaultValue
+  const display = value ?? DEFAULT_COLOR
 
   return (
     <label className="block">
