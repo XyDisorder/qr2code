@@ -17,8 +17,8 @@ export default function LogoUrlInput() {
       const img = new Image();
       img.onload = () => setError("");
       img.onerror = () => setError("URL non valide");
-      
-      img.src = value;
+
+      img.src = logoSrc;
     } catch (e) {
       setError("URL non valide");
       
@@ -35,7 +35,6 @@ export default function LogoUrlInput() {
       setLogoName("")
       setLogoSrc(e.target.value)
     }}
-    onBlur={() => validateAndSave(inputValue)}
     onPaste={e => {
       e.preventDefault()
       const url = e.clipboardData.getData("text/plain").trim()
