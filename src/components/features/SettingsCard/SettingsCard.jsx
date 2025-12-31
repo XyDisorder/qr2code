@@ -5,10 +5,11 @@ import { useQrSettings } from "../../../store/useQrSettings"
 import UploadLogo from "../UploadLogo/UploadLogo";
 import AdvancedOptions from "./components/AdvancedOptions/AdvancedOptions";
 import ColorPicker from "../../common/ColorPicker";
+import CornerSelector from "./components/AdvancedOptions/components/CornerSelector";
 
 
 function SettingsCard() {
-  const { text, size, fgColor, bgColor, setText, setSize, setFgColor, setBgColor } = useQrSettings()
+  const { text, size, fgColor, bgColor, cornerSquareColor, cornerDotColor, setText, setSize, setFgColor, setBgColor, setCornerSquareColor, setCornerDotColor } = useQrSettings()
 
 
   return (
@@ -40,6 +41,19 @@ function SettingsCard() {
                     onChange={e => setFgColor(e.target.value)
                     }/>
       </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+        <ColorPicker label="Couleur coins internes" 
+                    value={cornerDotColor} 
+                    onChange={e => setCornerDotColor(e.target.value)}/>
+
+        <ColorPicker label="Couleur coins externes"  
+                    value={cornerSquareColor} 
+                    onChange={e => setCornerSquareColor(e.target.value)
+                    }/>
+      </div>
+
+      <CornerSelector />
 
       <UploadLogo />
 

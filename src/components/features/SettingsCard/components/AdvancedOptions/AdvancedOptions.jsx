@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
-import CornerSelector from './components/CornerSelector'
 import ShapeSelector from './components/ShapeSelector'
 import LevelSelector from './components/LevelSelector'
-import { CornerColorSelector } from './components/CornerColorSelector'
 
 
 export default function AdvancedOptions() {
@@ -23,8 +21,6 @@ export default function AdvancedOptions() {
 
       {open && (
         <div className="mt-4 grid grid-cols-1 gap-6">
-          <CornerSelector />
-          <CornerColorSelector />
           <ShapeSelector />
           <LevelSelector />
         </div>
