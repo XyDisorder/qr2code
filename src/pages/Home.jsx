@@ -4,6 +4,7 @@ import SEO from "../components/seo/SEO";
 import SettingsCard from "../components/features/SettingsCard/SettingsCard";
 import PreviewCard from "../components/features/PreviewCard/PreviewCard";
 import HowItWorks from "../components/features/HowItWorks/HowItWorks";
+import Features from "../components/features/Features/Features";
 import FAQ from "../components/features/FAQ/FAQ";
 
 function Home() {
@@ -30,6 +31,9 @@ function Home() {
           <PreviewCard className="flex flex-col justify-between" />
         </div>
       </div>
+
+      {/* Features Section - SEO Rich Content */}
+      <Features />
 
       {/* How It Works Section */}
       <HowItWorks />

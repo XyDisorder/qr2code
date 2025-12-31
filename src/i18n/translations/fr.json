@@ -119,6 +119,34 @@
       "title": "Téléchargez et utilisez",
       "description": "Choisissez votre format préféré (PNG, SVG, PDF, etc.) et téléchargez votre QR code instantanément. Utilisez-le dans vos supports marketing, cartes de visite ou partout où vous en avez besoin."
     }
+  },
+  "features": {
+    "title": "Pourquoi choisir Qr2Code ?",
+    "subtitle": "Le meilleur générateur de QR code gratuit avec des options de personnalisation avancées",
+    "fast": {
+      "title": "Ultra Rapide",
+      "description": "Générez des QR codes instantanément dans votre navigateur. Pas d'attente, pas de temps de traitement. Créez un nombre illimité de QR codes en quelques secondes."
+    },
+    "customizable": {
+      "title": "Entièrement Personnalisable",
+      "description": "Personnalisez les couleurs, ajoutez votre logo, choisissez les styles de coins et ajustez les niveaux de correction d'erreur. Faites correspondre vos QR codes parfaitement à votre marque."
+    },
+    "formats": {
+      "title": "Plusieurs Formats",
+      "description": "Téléchargez vos QR codes aux formats PNG, SVG, JPEG, WebP ou PDF. Parfait pour tout usage - numérique ou imprimé."
+    },
+    "secure": {
+      "title": "100% Privé et Sécurisé",
+      "description": "Toute la génération de QR codes se fait dans votre navigateur. Aucune donnée n'est envoyée aux serveurs. Vos informations restent complètement privées."
+    },
+    "online": {
+      "title": "Aucune Installation Requise",
+      "description": "Utilisez notre générateur de QR code gratuit en ligne directement dans votre navigateur. Fonctionne sur tout appareil - ordinateur, tablette ou mobile. Aucun téléchargement de logiciel nécessaire."
+    },
+    "mobile": {
+      "title": "Compatible Mobile",
+      "description": "Créez et scannez des QR codes sur n'importe quel appareil. Notre design responsive fonctionne parfaitement sur smartphones, tablettes et ordinateurs."
+    }
   }
 }
 

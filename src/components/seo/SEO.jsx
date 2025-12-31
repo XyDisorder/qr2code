@@ -43,11 +43,11 @@ export default function SEO({ title, description, keywords, image, type = 'websi
     : 'Qr2Code - Générateur de QR Code Gratuit en Ligne'
   
   const defaultDescription = language === 'en'
-    ? 'Create unique and stylish QR codes in just a few clicks. Customize colors, add your logo, and download in PNG, SVG, PDF formats. Free, fast, and no registration required.'
+    ? 'Free online QR code generator - Create custom QR codes with logo, colors, and multiple formats. No registration required. Generate QR codes instantly for websites, Wi-Fi, contact info, and more. Download in PNG, SVG, PDF, JPEG, WebP formats.'
     : 'Créez des codes QR uniques et stylisés en quelques clics. Personnalisez les couleurs, ajoutez votre logo et téléchargez aux formats PNG, SVG et PDF. Gratuit, rapide et sans inscription.'
 
   const defaultKeywords = language === 'en'
-    ? 'QR code, QR code generator, create QR code, free QR code, online QR code, QR code maker, custom QR code, QR code with logo'
+    ? 'QR code generator, free QR code generator, online QR code generator, create QR code, QR code maker, custom QR code, QR code with logo, QR code generator free, QR code creator, generate QR code, QR code online, QR code tool, QR code generator no sign up, QR code maker online, free QR code, QR code designer, QR code generator custom colors, QR code download PNG SVG PDF, QR code generator instant, QR code for website, QR code for Wi-Fi, QR code for contact'
     : 'QR code, générateur QR code, créer QR code, QR code gratuit, QR code en ligne, générateur de code QR, QR code personnalisé, QR code avec logo'
 
   const seoTitle = title || defaultTitle
@@ -140,11 +140,19 @@ export default function SEO({ title, description, keywords, image, type = 'websi
       inLanguage: language === 'fr' ? 'fr' : 'en',
       featureList: [
         'Free QR code generation',
-        'Custom colors',
-        'Logo upload',
-        'Multiple formats (PNG, SVG, PDF)',
-        'No registration required'
-      ]
+        'Custom colors and design',
+        'Logo upload and branding',
+        'Multiple formats (PNG, SVG, PDF, JPEG, WebP)',
+        'No registration required',
+        'Instant generation',
+        'Privacy-focused (browser-based)',
+        'Mobile-friendly',
+        'Error correction levels',
+        'Custom corner styles'
+      ],
+      keywords: language === 'en' 
+        ? 'QR code generator, free QR code, online QR code maker, create QR code, custom QR code, QR code with logo'
+        : 'générateur QR code, QR code gratuit, créer QR code, QR code personnalisé'
     }
 
     let script = document.querySelector('script[type="application/ld+json"]')
