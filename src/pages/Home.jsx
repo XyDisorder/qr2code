@@ -1,13 +1,18 @@
 import React from "react";
 import { useTranslation } from "@/i18n/TranslationContext";
+import SEO from "../components/seo/SEO";
 import SettingsCard from "../components/features/SettingsCard/SettingsCard";
 import PreviewCard from "../components/features/PreviewCard/PreviewCard";
+import HowItWorks from "../components/features/HowItWorks/HowItWorks";
+import FAQ from "../components/features/FAQ/FAQ";
 
 function Home() {
   const { t } = useTranslation()
   
   return (
-    <section className="container mx-auto px-4 py-8">
+    <>
+      <SEO />
+      <section className="container mx-auto px-4 py-8">
       {/* Hero Section */}
       <div className="text-center mb-12 animate-fade-in">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 leading-tight bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
@@ -25,7 +30,14 @@ function Home() {
           <PreviewCard className="flex flex-col justify-between" />
         </div>
       </div>
+
+      {/* How It Works Section */}
+      <HowItWorks />
+
+      {/* FAQ Section */}
+      <FAQ />
     </section>
+    </>
   )
 }
 

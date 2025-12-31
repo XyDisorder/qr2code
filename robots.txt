@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.qr2code.fr/sitemap.xml
-Host: www.qr2code.fr
+# Sitemaps
+Sitemap: https://qr2code.fr/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1

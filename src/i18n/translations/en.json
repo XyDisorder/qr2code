@@ -81,6 +81,44 @@
       "description": "You have the right to access, rectify and delete your data. Since no personal data is collected, these rights have no practical application."
     },
     "contact": "For any questions, contact me at"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": {
+      "question": "Is Qr2Code really free?",
+      "answer": "Yes, Qr2Code is completely free to use. You can generate unlimited QR codes without any registration, payment, or hidden fees. All features are available at no cost."
+    },
+    "q2": {
+      "question": "What formats can I download my QR code in?",
+      "answer": "You can download your QR codes in multiple formats: PNG (for images), SVG (vector format, scalable), JPEG, WebP, and PDF. Choose the format that best suits your needs."
+    },
+    "q3": {
+      "question": "Can I add my logo to the QR code?",
+      "answer": "Yes! You can upload your logo either by providing a URL or by selecting a file from your device. The logo will be placed in the center of the QR code while maintaining its scannability."
+    },
+    "q4": {
+      "question": "Do I need to create an account?",
+      "answer": "No account required! Qr2Code works entirely in your browser. Simply enter your text or URL, customize your QR code, and download it immediately. No registration, no email, no hassle."
+    },
+    "q5": {
+      "question": "What is the maximum size for QR codes?",
+      "answer": "You can generate QR codes from 100px to 1000px in size. The size you choose depends on where you plan to use the QR code - smaller for digital use, larger for print materials."
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "step1": {
+      "title": "Enter Your Content",
+      "description": "Type any text or paste a URL you want to encode into a QR code. It can be a website link, contact information, Wi-Fi credentials, or any text."
+    },
+    "step2": {
+      "title": "Customize Your Design",
+      "description": "Personalize your QR code with custom colors for the background, foreground, and corners. Upload your logo to make it unique and branded."
+    },
+    "step3": {
+      "title": "Download & Use",
+      "description": "Choose your preferred format (PNG, SVG, PDF, etc.) and download your QR code instantly. Use it in your marketing materials, business cards, or anywhere you need it."
+    }
   }
 }
 

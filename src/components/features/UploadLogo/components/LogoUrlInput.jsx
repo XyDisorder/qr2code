@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import { useQrSettings } from "../../../../store/useQrSettings"  
 import { useTranslation } from "@/i18n/TranslationContext"
 import { FiLink } from "react-icons/fi"
+import { isValidUrl, isValidImageUrl, sanitizeInput } from "@/utils/security"
 
 export default function LogoUrlInput() {
   const { t } = useTranslation()
@@ -14,17 +15,25 @@ export default function LogoUrlInput() {
       return;
     }
     
-    try {
-      new URL(logoSrc);
-      
-      const img = new Image();
-      img.onload = () => setError("");
-      img.onerror = () => setError(t('settings.logo.invalidUrl'));
-      
-      img.src = logoSrc;
-    } catch (e) {
+    // Validate URL format
+    if (!isValidUrl(logoSrc)) {
       setError(t('settings.logo.invalidUrl'));
+      return;
     }
+    
+    // Validate it's an image URL
+    if (!isValidImageUrl(logoSrc)) {
+      setError(t('settings.logo.invalidUrl'));
+      return;
+    }
+    
+    // Verify image loads (CORS check)
+    const img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = () => setError("");
+    img.onerror = () => setError(t('settings.logo.invalidUrl'));
+    
+    img.src = logoSrc;
   }, [logoSrc, t])
   
   return (
@@ -39,11 +48,12 @@ export default function LogoUrlInput() {
           value={logoSrc.startsWith("data:") ? "" : logoSrc}
           onChange={e => {
             setLogoName("")
-            setLogoSrc(e.target.value)
+            const sanitized = sanitizeInput(e.target.value, 2048)
+            setLogoSrc(sanitized)
           }}
           onPaste={e => {
             e.preventDefault()
-            const url = e.clipboardData.getData("text/plain").trim()
+            const url = sanitizeInput(e.clipboardData.getData("text/plain").trim(), 2048)
             setLogoName("")
             setLogoSrc(url)
           }}

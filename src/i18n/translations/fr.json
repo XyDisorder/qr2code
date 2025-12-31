@@ -81,6 +81,44 @@
       "description": "Vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Comme aucune donnée personnelle n'est collectée, ces droits n'ont pas d'application pratique."
     },
     "contact": "Pour toute question, contactez-moi à"
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "q1": {
+      "question": "Qr2Code est-il vraiment gratuit ?",
+      "answer": "Oui, Qr2Code est entièrement gratuit. Vous pouvez générer un nombre illimité de QR codes sans inscription, paiement ou frais cachés. Toutes les fonctionnalités sont disponibles gratuitement."
+    },
+    "q2": {
+      "question": "Dans quels formats puis-je télécharger mon QR code ?",
+      "answer": "Vous pouvez télécharger vos QR codes en plusieurs formats : PNG (pour les images), SVG (format vectoriel, redimensionnable), JPEG, WebP et PDF. Choisissez le format qui correspond le mieux à vos besoins."
+    },
+    "q3": {
+      "question": "Puis-je ajouter mon logo au QR code ?",
+      "answer": "Oui ! Vous pouvez télécharger votre logo soit en fournissant une URL, soit en sélectionnant un fichier depuis votre appareil. Le logo sera placé au centre du QR code tout en conservant sa lisibilité."
+    },
+    "q4": {
+      "question": "Dois-je créer un compte ?",
+      "answer": "Aucun compte requis ! Qr2Code fonctionne entièrement dans votre navigateur. Entrez simplement votre texte ou URL, personnalisez votre QR code et téléchargez-le immédiatement. Pas d'inscription, pas d'email, pas de tracas."
+    },
+    "q5": {
+      "question": "Quelle est la taille maximale pour les QR codes ?",
+      "answer": "Vous pouvez générer des QR codes de 100px à 1000px. La taille que vous choisissez dépend de l'endroit où vous prévoyez d'utiliser le QR code - plus petit pour un usage numérique, plus grand pour les supports imprimés."
+    }
+  },
+  "howItWorks": {
+    "title": "Comment ça marche",
+    "step1": {
+      "title": "Entrez votre contenu",
+      "description": "Tapez n'importe quel texte ou collez une URL que vous souhaitez encoder dans un QR code. Il peut s'agir d'un lien de site web, d'informations de contact, d'identifiants Wi-Fi ou de tout autre texte."
+    },
+    "step2": {
+      "title": "Personnalisez votre design",
+      "description": "Personnalisez votre QR code avec des couleurs personnalisées pour l'arrière-plan, le premier plan et les coins. Téléchargez votre logo pour le rendre unique et personnalisé."
+    },
+    "step3": {
+      "title": "Téléchargez et utilisez",
+      "description": "Choisissez votre format préféré (PNG, SVG, PDF, etc.) et téléchargez votre QR code instantanément. Utilisez-le dans vos supports marketing, cartes de visite ou partout où vous en avez besoin."
+    }
   }
 }
 
