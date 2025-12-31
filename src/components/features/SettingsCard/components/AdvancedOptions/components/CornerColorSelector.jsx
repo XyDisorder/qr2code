@@ -6,20 +6,16 @@ export function CornerColorSelector() {
 const { cornerSquareColor, cornerDotColor, setCornerSquareColor, setCornerDotColor } = useQrSettings();
  
 return (
-  <div>
-   <h3 className="text-sm font-semibold mb-2">Couleurs des coins</h3>
+  <>
+    <ColorPicker label="Couleur coins internes" 
+              value={cornerDotColor} 
+              onChange={e => setCornerDotColor(e.target.value)}/>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-      <ColorPicker label="coins internes" 
-                value={cornerDotColor} 
-                onChange={e => setCornerDotColor(e.target.value)}/>
-
-      <ColorPicker label="coins externes"  
-                value={cornerSquareColor} 
-                onChange={e => setCornerSquareColor(e.target.value)
-                }/>
-    </div>
-    </div>
+    <ColorPicker label="Couleur coins externes"  
+              value={cornerSquareColor} 
+              onChange={e => setCornerSquareColor(e.target.value)
+              }/>
+  </>
 )
 
 
