@@ -1,24 +1,26 @@
 import React from "react"
+import { useTranslation } from "@/i18n/TranslationContext"
 
 export default function LegalMention() {
+  const { t } = useTranslation()
+  
   return (
     <main className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">Mentions Légales</h1>
+      <h1 className="text-3xl font-bold mb-6">{t('legal.title')}</h1>
 
       <p className="mb-4">
-        Éditeur du site : <strong>Sarah Bourgeois</strong><br/>
-        Adresse : Paris, France<br/>
-        Email : <a href="xydisorder@gmail.com" className="underline">xydisorder@gmail.com</a>
+        {t('legal.editor')} <strong>{t('legal.editorName')}</strong><br/>
+        {t('legal.address')} {t('legal.editorAddress')}<br/>
+        {t('legal.email')} <a href="mailto:xydisorder@gmail.com" className="underline">xydisorder@gmail.com</a>
       </p>
 
       <p>
-      Hébergeur : Netlify, Inc.<br/>
-      Adresse : 2325 3rd Street, Suite 296, San Francisco, CA 94107, États‑Unis<br/>
-      Site web : <a href="https://www.netlify.com" className="underline" target="_blank" rel="noopener noreferrer">
+      {t('legal.host')} {t('legal.hostName')}<br/>
+      {t('legal.address')} {t('legal.hostAddress')}<br/>
+      {t('legal.website')} <a href="https://www.netlify.com" className="underline" target="_blank" rel="noopener noreferrer">
       netlify.com
       </a>
     </p>
     </main>
   )
 }
-

@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "title": "Créez des QR Codes Personnalisés",
+    "description": "Générez des codes QR uniques et stylisés en quelques clics. Personnalisez les couleurs, ajoutez votre logo et téléchargez dans le format de votre choix."
+  },
+  "header": {
+    "tagline": "Transform • Share • Connect"
+  },
+  "settings": {
+    "title": "Paramètres du QR Code",
+    "textInput": {
+      "label": "Texte ou Url :",
+      "placeholder": "https://exemple.com"
+    },
+    "size": {
+      "label": "Taille :"
+    },
+    "colors": {
+      "background": "Couleur de fond",
+      "foreground": "Couleur du motif",
+      "cornerInner": "Couleur coins internes",
+      "cornerOuter": "Couleur coins externes"
+    },
+    "cornerShape": {
+      "title": "Forme des coins",
+      "square": "Carré",
+      "round": "Rond"
+    },
+    "logo": {
+      "title": "Logo",
+      "urlPlaceholder": "URL du logo",
+      "invalidUrl": "URL non valide"
+    },
+    "advanced": {
+      "title": "Options avancées",
+      "moduleShape": {
+        "title": "Forme des modules"
+      },
+      "errorLevel": {
+        "title": "Niveau de correction d'erreur",
+        "low": "Faible",
+        "medium": "Moyen",
+        "high": "Élevé",
+        "maximum": "Maximum"
+      }
+    }
+  },
+  "preview": {
+    "title": "Aperçu"
+  },
+  "download": {
+    "button": "Télécharger le QR Code"
+  },
+  "footer": {
+    "copyright": "Tous droits réservés",
+    "home": "Home",
+    "legal": "Mentions Légales",
+    "privacy": "Politique de Confidentialité"
+  },
+  "legal": {
+    "title": "Mentions Légales",
+    "editor": "Éditeur du site :",
+    "address": "Adresse :",
+    "email": "Email :",
+    "host": "Hébergeur :",
+    "website": "Site web :",
+    "editorName": "Sarah Bourgeois",
+    "editorAddress": "Paris, France",
+    "hostName": "Netlify, Inc.",
+    "hostAddress": "2325 3rd Street, Suite 296, San Francisco, CA 94107, États‑Unis"
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "intro": "Qr2code ne collecte aucune donnée personnelle identifiable. Aucune information n'est stockée ou partagée. Le service se limite à générer et télécharger des QR codes directement dans votre navigateur.",
+    "cookies": {
+      "title": "Cookies",
+      "description": "Ce site utilise uniquement des cookies strictement nécessaires au fonctionnement de votre session. Aucun cookie tiers ou traceur analytique n'est déposé."
+    },
+    "rights": {
+      "title": "Vos droits",
+      "description": "Vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Comme aucune donnée personnelle n'est collectée, ces droits n'ont pas d'application pratique."
+    },
+    "contact": "Pour toute question, contactez-moi à"
+  }
+}
+

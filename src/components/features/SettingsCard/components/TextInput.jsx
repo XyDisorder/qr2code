@@ -1,18 +1,24 @@
 import React from "react";
+import { FiLink } from "react-icons/fi";
 
 function TextInput({ label, placeholder, onChange, value })  {
 
   return (
-    <label className="block">
-    <span className="block mb-1 text-sm">{label}</span>
-    <input 
-      type="text" 
-      value={value}
-      onChange={onChange}
-      placeholder={placeholder}
-      className="w-full bg-gray-700 text-white rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
-    />
-  </label>
+    <label className="block group">
+      <span className="block mb-2.5 text-sm font-semibold text-gray-200">{label}</span>
+      <div className="relative">
+        <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 group-focus-within:text-blue-400 transition-colors">
+          <FiLink className="w-5 h-5" />
+        </div>
+        <input 
+          type="text" 
+          value={value}
+          onChange={onChange}
+          placeholder={placeholder}
+          className="w-full bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 text-white text-sm rounded-xl pl-11 pr-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 transition-all duration-300 hover:border-gray-600 placeholder:text-gray-500"
+        />
+      </div>
+    </label>
   )
 }
 

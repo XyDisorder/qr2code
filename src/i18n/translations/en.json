@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "title": "Create Custom QR Codes",
+    "description": "Generate unique and stylish QR codes in just a few clicks. Customize colors, add your logo, and download in your preferred format."
+  },
+  "header": {
+    "tagline": "Transform • Share • Connect"
+  },
+  "settings": {
+    "title": "QR Code Settings",
+    "textInput": {
+      "label": "Text or URL:",
+      "placeholder": "https://example.com"
+    },
+    "size": {
+      "label": "Size:"
+    },
+    "colors": {
+      "background": "Background Color",
+      "foreground": "Foreground Color",
+      "cornerInner": "Inner Corner Color",
+      "cornerOuter": "Outer Corner Color"
+    },
+    "cornerShape": {
+      "title": "Corner Shape",
+      "square": "Square",
+      "round": "Round"
+    },
+    "logo": {
+      "title": "Logo",
+      "urlPlaceholder": "Logo URL",
+      "invalidUrl": "Invalid URL"
+    },
+    "advanced": {
+      "title": "Advanced Options",
+      "moduleShape": {
+        "title": "Module Shape"
+      },
+      "errorLevel": {
+        "title": "Error Correction Level",
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High",
+        "maximum": "Maximum"
+      }
+    }
+  },
+  "preview": {
+    "title": "Preview"
+  },
+  "download": {
+    "button": "Download QR Code"
+  },
+  "footer": {
+    "copyright": "All rights reserved",
+    "home": "Home",
+    "legal": "Legal Notice",
+    "privacy": "Privacy Policy"
+  },
+  "legal": {
+    "title": "Legal Notice",
+    "editor": "Site Editor:",
+    "address": "Address:",
+    "email": "Email:",
+    "host": "Host:",
+    "website": "Website:",
+    "editorName": "Sarah Bourgeois",
+    "editorAddress": "Paris, France",
+    "hostName": "Netlify, Inc.",
+    "hostAddress": "2325 3rd Street, Suite 296, San Francisco, CA 94107, United States"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "Qr2code does not collect any personally identifiable data. No information is stored or shared. The service is limited to generating and downloading QR codes directly in your browser.",
+    "cookies": {
+      "title": "Cookies",
+      "description": "This site uses only strictly necessary cookies for your session to function. No third-party cookies or analytical trackers are placed."
+    },
+    "rights": {
+      "title": "Your rights",
+      "description": "You have the right to access, rectify and delete your data. Since no personal data is collected, these rights have no practical application."
+    },
+    "contact": "For any questions, contact me at"
+  }
+}
+

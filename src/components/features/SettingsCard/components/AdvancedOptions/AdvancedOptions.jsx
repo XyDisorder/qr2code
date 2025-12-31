@@ -1,26 +1,31 @@
 import React, { useState } from 'react'
+import { useTranslation } from "@/i18n/TranslationContext"
 import ShapeSelector from './components/ShapeSelector'
 import LevelSelector from './components/LevelSelector'
+import { FiChevronDown, FiSettings } from 'react-icons/fi'
 
 
 export default function AdvancedOptions() {
+  const { t } = useTranslation()
   const [open, setOpen] = useState(false)
   return (
     <section className="mt-6">
-      <h2 className="text-l font-semibold text-blue-400 mb-3">Personnalisation avancée</h2>
-
       <button
         onClick={() => setOpen(prev => !prev)}
-        className={`w-full h-12 bg-gray-600 text-white rounded-lg px-4 py-2 text-left transition hover:bg-gray-500 focus:outline-none ${
-          open ? "ring-2 ring-blue-400" : ""
+        className={`w-full bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 text-white rounded-xl px-4 py-3 text-left transition-all duration-300 flex items-center justify-between group hover:border-purple-500/50 hover:bg-gray-800/70 ${
+          open ? "ring-2 ring-purple-500/50 border-purple-500/50" : ""
         }`}
       >
-        Options avancées {open ? "▲" : "▼"}
+        <div className="flex items-center gap-2">
+          <FiSettings className="w-5 h-5 text-purple-400" />
+          <span className="font-semibold text-sm">{t('settings.advanced.title')}</span>
+        </div>
+        <FiChevronDown className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
       </button>
 
 
       {open && (
-        <div className="mt-4 grid grid-cols-1 gap-6">
+        <div className="mt-4 grid grid-cols-1 gap-6 animate-fade-in">
           <ShapeSelector />
           <LevelSelector />
         </div>

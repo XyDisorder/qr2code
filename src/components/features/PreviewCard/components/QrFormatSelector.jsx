@@ -4,16 +4,16 @@ const FORMATS = ["png", "jpeg", "svg", "webp", "pdf" ]
 
 export default function QrFormatSelector({ selected = "png", onSelect }) {
   return (
-    <div className="flex justify-center gap-4 mt-4">
+    <div className="flex flex-wrap justify-center gap-3 mt-4">
       {FORMATS.map(fmt => (
         <button
           key={fmt}
           onClick={() => onSelect(fmt)}
           className={`
-            px-4 py-2 rounded-full text-sm font-medium transition
+            px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 transform uppercase tracking-wide
             ${fmt === selected
-              ? "bg-gray-900 text-white ring-2 ring-blue-400"
-              : "bg-gray-700 text-gray-300 hover:bg-gray-600"
+              ? "bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg shadow-purple-500/50 scale-105 ring-2 ring-purple-400/50"
+              : "bg-gray-700/50 text-gray-300 hover:bg-gray-600/70 hover:scale-105 border border-gray-600/50"
             }
           `}
         >
