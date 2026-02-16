@@ -9,9 +9,10 @@ All sensitive configuration should be stored in environment variables, not hardc
 Create a `.env.local` file in the root directory with:
 
 ```env
-VITE_GOOGLE_ANALYTICS_ID=G-R9XD0D5HV0
+VITE_GOOGLE_ANALYTICS_ID=G-XXXXXXXXXX
 VITE_SITE_URL=https://qr2code.fr
 ```
+(Remplacez `G-XXXXXXXXXX` par votre ID de mesure Google Analytics.)
 
 **Important:** Never commit `.env.local` to version control. It's already in `.gitignore`.
 
@@ -66,4 +67,6 @@ VITE_SITE_URL=https://qr2code.fr
 ## Reporting Security Issues
 
 If you discover a security vulnerability, please email xydisorder@gmail.com instead of using the issue tracker.
+
+
 

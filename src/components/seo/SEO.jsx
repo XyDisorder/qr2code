@@ -2,28 +2,26 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { useTranslation } from '@/i18n/TranslationContext'
 
-// Get Google Analytics ID from environment variable
+// Google Analytics ID: from env only (never in repo). Set VITE_GOOGLE_ANALYTICS_ID in Netlify and .env.local for dev.
 const GA_ID = import.meta.env.VITE_GOOGLE_ANALYTICS_ID || ''
 const SITE_URL = import.meta.env.VITE_SITE_URL || 'https://qr2code.fr'
 
-// Initialize Google Analytics only if ID is provided
+// Initialize Google Analytics only when ID is set (via env)
 if (typeof window !== 'undefined' && GA_ID) {
   window.dataLayer = window.dataLayer || []
   function gtag(...args) {
     window.dataLayer.push(args)
   }
-  
-  if (!window.gtag) {
-    window.gtag = gtag
-    gtag('js', new Date())
-    gtag('config', GA_ID, {
-      page_path: window.location.pathname,
-      anonymize_ip: true, // Privacy: anonymize IP addresses
-      allow_google_signals: false, // Disable Google signals
-      allow_ad_personalization_signals: false, // Disable ad personalization
-    })
+  window.gtag = gtag
+  gtag('js', new Date())
+  gtag('config', GA_ID, {
+    page_path: window.location.pathname,
+    anonymize_ip: true,
+    allow_google_signals: false,
+    allow_ad_personalization_signals: false,
+  })
 
-    // Load GA script with integrity check
+  if (!document.querySelector(`script[src*="gtag/js?id=${GA_ID}"]`)) {
     const script = document.createElement('script')
     script.async = true
     script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`
@@ -163,8 +161,8 @@ export default function SEO({ title, description, keywords, image, type = 'websi
     }
     script.textContent = JSON.stringify(structuredData)
 
-    // Track page view in Google Analytics (only if enabled)
-    if (GA_ID && window.gtag) {
+    // Track page view in Google Analytics (sends hit on every route/language change)
+    if (typeof window !== 'undefined' && window.gtag) {
       window.gtag('config', GA_ID, {
         page_path: location.pathname,
         page_title: seoTitle,

@@ -71,3 +71,5 @@ Le sitemap doit inclure les deux domaines avec les bons hreflang.
 2. Mettre à jour `VITE_SITE_URL` dans Netlify
 3. Le code est déjà prêt avec les hreflang configurés !
 
+
+
