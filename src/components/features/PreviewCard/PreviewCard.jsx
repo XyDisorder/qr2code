@@ -44,6 +44,7 @@ export default function PreviewCard() {
       cornersDotOptions: { color: cornerDotColor, type: cornerType },
       backgroundOptions: { color: bgColor },
       image: logoSrc,
+      imageOptions: { crossOrigin: "anonymous", margin: 5 },
       qrOptions: { errorCorrectionLevel: defaultErrorLevel }
     })
   }, [text, fgColor, bgColor, logoSrc, dotType, cornerType, defaultErrorLevel, cornerSquareColor, cornerDotColor])
