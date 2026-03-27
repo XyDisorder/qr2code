@@ -31,6 +31,10 @@ export default function PreviewCard() {
 
 
   useEffect(() => {
+    qr.append(qrRef.current)
+  }, [])
+
+  useEffect(() => {
     qr.update({
       data: text,
       width: PREVIEW_SIZE,
@@ -42,7 +46,6 @@ export default function PreviewCard() {
       image: logoSrc,
       qrOptions: { errorCorrectionLevel: defaultErrorLevel }
     })
-    qr.append(qrRef.current)
   }, [text, fgColor, bgColor, logoSrc, dotType, cornerType, defaultErrorLevel, cornerSquareColor, cornerDotColor])
 
 
