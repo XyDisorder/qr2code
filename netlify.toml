@@ -14,7 +14,7 @@
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
     
     # Content Security Policy
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com; img-src 'self' data: https: blob:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; frame-ancestors 'none';"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; img-src 'self' data: https: blob:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; frame-ancestors 'none';"
     
     # HSTS (only if using HTTPS)
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
