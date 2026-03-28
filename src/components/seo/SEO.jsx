@@ -2,32 +2,8 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { useTranslation } from '@/i18n/TranslationContext'
 
-// Google Analytics ID: from env only (never in repo). Set VITE_GOOGLE_ANALYTICS_ID in Netlify and .env.local for dev.
-const GA_ID = import.meta.env.VITE_GOOGLE_ANALYTICS_ID || ''
+const GA_ID = 'G-R9XD0D5HV0'
 const SITE_URL = import.meta.env.VITE_SITE_URL || 'https://qr2code.fr'
-
-// Initialize Google Analytics only when ID is set (via env)
-if (typeof window !== 'undefined' && GA_ID) {
-  window.dataLayer = window.dataLayer || []
-  function gtag(...args) {
-    window.dataLayer.push(args)
-  }
-  window.gtag = gtag
-  gtag('js', new Date())
-  gtag('config', GA_ID, {
-    page_path: window.location.pathname,
-    anonymize_ip: true,
-    allow_google_signals: false,
-    allow_ad_personalization_signals: false,
-  })
-
-  if (!document.querySelector(`script[src*="gtag/js?id=${GA_ID}"]`)) {
-    const script = document.createElement('script')
-    script.async = true
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`
-    document.head.appendChild(script)
-  }
-}
 
 export default function SEO({ title, description, keywords, image, type = 'website' }) {
   const { language } = useTranslation()
